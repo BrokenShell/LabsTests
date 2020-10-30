@@ -32,7 +32,7 @@
 - Package dependencies: `requirements.txt`
 
 
-### Project Dependencies
+### Iris Example Project Dependencies
 - flask
 - gunicorn
 - joblib
