@@ -38,3 +38,9 @@
 - joblib
 - pandas
 - scikit-learn
+
+
+### EB Environment Variables
+In the Elastic Beanstalk Console go to your environment -> Configuration. Then
+Software -> Edit. At the bottom of the page you can add key: value pairs for each of your
+environment variables.
