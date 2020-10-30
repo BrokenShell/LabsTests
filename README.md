@@ -42,5 +42,5 @@
 
 ### EB Environment Variables
 In the Elastic Beanstalk Console go to your environment -> Configuration. Then
-Software -> Edit. At the bottom of the page you can add key: value pairs for each of your
-environment variables.
+Software -> Edit. At the bottom of the page you can add a [key: value] pair for 
+each of the environment variables required for the app.
