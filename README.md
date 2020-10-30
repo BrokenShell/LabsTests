@@ -1,20 +1,21 @@
 # AWS Elastic Beanstalk Deployment
 
-### Deployment
+
+### Deployment v0.2
 - [Hello World Test](http://brokentestingserver-env.eba-dqb8pfdx.us-east-1.elasticbeanstalk.com/)
-- [Iris Example Prediction - SVM Classification](http://brokentestingserver-env.eba-dqb8pfdx.us-east-1.elasticbeanstalk.com/predict?sepal_length=5.7&sepal_width=2.8&petal_length=4.5&petal_width=1.3)
+- [Iris Example Predictions - SVM Classification](http://brokentestingserver-env.eba-dqb8pfdx.us-east-1.elasticbeanstalk.com/predict?sepal_length=5.7&sepal_width=2.8&petal_length=4.5&petal_width=1.3)
 
 
 ### Project Structure
 - Project Directory
     - `/application` - Python package
         - `__init__.py` - `from application.main import application`
-        - `main.py` - primary application routes
+        - `main.py` - primary application routes and Flask app named `application`
         - `model.joblib` - joblib or pickled model
     - `/venv` (or your preferred virtual env)
     - `.gitignore`
-    - `builder.py` - ML model builder script
-    - `loader.py` - ML model loader script example
+    - `builder.py` - ML model builder script (external)
+    - `loader.py` - ML model loader script (external)
     - `README.md`
     - `requirements.txt` - deployment dependencies
 
@@ -27,5 +28,13 @@
 
 
 ### The deployment zip archive should include only the following
-- Your Python application package `/application`
-- Package dependencies `requirements.txt`
+- Your Python application package or module: `/application` or `application.py`
+- Package dependencies: `requirements.txt`
+
+
+### Project Dependencies
+- flask
+- gunicorn
+- joblib
+- pandas
+- scikit-learn
